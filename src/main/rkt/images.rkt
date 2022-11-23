@@ -1,0 +1,92 @@
+#lang racket
+(provide HEADER)
+(provide PAC-IMG)
+(provide PAC-SHIFTED-IMG)
+(provide INKY-UP)
+(provide INKY-UP-2)
+(provide INKY-DOWN)
+(provide INKY-DOWN-2)
+(provide INKY-LEFT)
+(provide INKY-LEFT-2)
+(provide INKY-RIGHT)
+(provide INKY-RIGHT-2)
+(provide PINKY-UP)
+(provide PINKY-UP-2)
+(provide PINKY-DOWN)
+(provide PINKY-DOWN-2)
+(provide PINKY-LEFT)
+(provide PINKY-LEFT-2)
+(provide PINKY-RIGHT)
+(provide PINKY-RIGHT-2)
+(provide CLYDE-UP)
+(provide CLYDE-UP-2)
+(provide CLYDE-DOWN)
+(provide CLYDE-DOWN-2)
+(provide CLYDE-LEFT)
+(provide CLYDE-LEFT-2)
+(provide CLYDE-RIGHT)
+(provide CLYDE-RIGHT-2)
+(provide BLINKY-UP)
+(provide BLINKY-UP-2)
+(provide BLINKY-DOWN)
+(provide BLINKY-DOWN-2)
+(provide BLINKY-LEFT)
+(provide BLINKY-LEFT-2)
+(provide BLINKY-RIGHT)
+(provide BLINKY-RIGHT-2)
+(provide POINT-IMG)
+(provide COOKIE-IMG)
+(provide SCARED-IMG)
+(provide SCARED-IMG-2)
+(provide SCARED-IMG-3)
+(provide SCARED-IMG-4)
+
+
+
+(require 2htdp/image)
+(define HEADER (bitmap "../../../public/img/header.jpg"))
+(define PAC-IMG (bitmap "../../../public/img/pacman/pacman_open.png")) ; pacman open img
+(define PAC-SHIFTED-IMG (bitmap "../../../public/img/pacman/pacman_closed.png")) ; pacman closed img
+; inky images
+(define INKY-UP (bitmap "../../../public/img/inky/inky_up_1.png"))
+(define INKY-UP-2 (bitmap "../../../public/img/inky/inky_up_2.png"))
+(define INKY-DOWN (bitmap "../../../public/img/inky/inky_down_1.png"))
+(define INKY-DOWN-2 (bitmap "../../../public/img/inky/inky_down_2.png"))
+(define INKY-LEFT (bitmap "../../../public/img/inky/inky_left_1.png"))
+(define INKY-LEFT-2 (bitmap "../../../public/img/inky/inky_left_2.png"))
+(define INKY-RIGHT (bitmap "../../../public/img/inky/inky_right_1.png"))
+(define INKY-RIGHT-2 (bitmap "../../../public/img/inky/inky_right_2.png"))
+; pinky images
+(define PINKY-UP (bitmap "../../../public/img/pinky/pinky_up_1.png")) 
+(define PINKY-UP-2 (bitmap "../../../public/img/pinky/pinky_up_2.png"))
+(define PINKY-DOWN (bitmap "../../../public/img/pinky/pinky_down_1.png")) 
+(define PINKY-DOWN-2 (bitmap "../../../public/img/pinky/pinky_down_2.png"))
+(define PINKY-LEFT (bitmap "../../../public/img/pinky/pinky_left_1.png")) 
+(define PINKY-LEFT-2 (bitmap "../../../public/img/pinky/pinky_left_2.png"))
+(define PINKY-RIGHT (bitmap "../../../public/img/pinky/pinky_right_1.png")) 
+(define PINKY-RIGHT-2 (bitmap "../../../public/img/pinky/pinky_right_2.png"))
+; clyde images
+(define CLYDE-UP (bitmap "../../../public/img/clyde/clyde_up_1.png")) 
+(define CLYDE-UP-2 (bitmap "../../../public/img/clyde/clyde_up_2.png"))
+(define CLYDE-DOWN (bitmap "../../../public/img/clyde/clyde_down_1.png")) 
+(define CLYDE-DOWN-2 (bitmap "../../../public/img/clyde/clyde_down_2.png"))
+(define CLYDE-LEFT (bitmap "../../../public/img/clyde/clyde_left_1.png")) 
+(define CLYDE-LEFT-2 (bitmap "../../../public/img/clyde/clyde_left_2.png"))
+(define CLYDE-RIGHT (bitmap "../../../public/img/clyde/clyde_right_1.png")) 
+(define CLYDE-RIGHT-2 (bitmap "../../../public/img/clyde/clyde_right_2.png"))
+ ; blinky images
+(define BLINKY-LEFT (bitmap "../../../public/img/blinky/blinky_left_1.png"))
+(define BLINKY-LEFT-2 (bitmap "../../../public/img/blinky/blinky_left_2.png"))
+(define BLINKY-RIGHT (bitmap "../../../public/img/blinky/blinky_right_1.png"))
+(define BLINKY-RIGHT-2 (bitmap "../../../public/img/blinky/blinky_right_2.png"))
+(define BLINKY-DOWN (bitmap "../../../public/img/blinky/blinky_down_1.png"))
+(define BLINKY-DOWN-2 (bitmap "../../../public/img/blinky/blinky_down_2.png"))
+(define BLINKY-UP (bitmap "../../../public/img/blinky/blinky_up_1.png"))
+(define BLINKY-UP-2 (bitmap "../../../public/img/blinky/blinky_up_2.png"))
+
+(define POINT-IMG (bitmap "../../../public/img/cookies/save_cookie.png")) ; classical point img
+(define COOKIE-IMG (bitmap "../../../public/img/cookies/super_cookie.png")) ; special point img
+(define SCARED-IMG (bitmap "../../../public/img/scared/scared_1.png")); scared ghost
+(define SCARED-IMG-2 (bitmap "../../../public/img/scared/scared_2.png")); shifted scared ghost
+(define SCARED-IMG-3 (bitmap "../../../public/img/scared/scared_3.png")); scared white ghost
+(define SCARED-IMG-4 (bitmap "../../../public/img/scared/scared_4.png")); shifted scared white ghost
